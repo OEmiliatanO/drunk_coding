@@ -18,7 +18,7 @@ for i in mmap.keys():
         if_circle.append(i)
         mmap[i] = mmap[mmap[i]]
 
-
+input()
 nstr = int(input())
 for i in range(nstr):
     inp = input().split()
@@ -35,3 +35,4 @@ for i in range(nstr):
             ans += j
             ans += " "
     print(ans[:-1])
+
