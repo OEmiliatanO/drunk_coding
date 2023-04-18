@@ -24,4 +24,4 @@ def sol(n, goal):
 
 que = list(map(int, input().strip().split()))
 ind = que.index(max(que))
-print(sol(len(que), ind-1))
+print(sol(len(que)-1, ind-1))
