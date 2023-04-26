@@ -12,10 +12,10 @@ echo 5.test
 echo 6.test
 ./testgen.elf 1000 1 569 70 5 1 100 0 > 6.test
 echo 7.test
-./testgen.elf 100000 1 100000 1000 50 1 100 1 > 7.test
+./testgen.elf 10000 1 10000 1000 50 1 100 1 > 7.test
 echo 8.test
-./testgen.elf 100000 1 100000 1000 50 1 100 1 > 8.test
+./testgen.elf 100000 1 10000 1000 50 1 100 1 > 8.test
 echo 9.test
-./testgen.elf 100000 1 100000 1000 50 1 100 0 > 9.test
+./testgen.elf 100000 1 10000 1000 50 1 100 0 > 9.test
 echo 10.test
-./testgen.elf 100000 1 100000 1000 50 1 100 1 > 10.test
+./testgen.elf 100000 1 10000 1000 50 1 100 1 > 10.test

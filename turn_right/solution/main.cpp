@@ -63,5 +63,5 @@ int main()
             }
         }
     }
-    std::cout << dis[t] << '\n';
+    std::cout << (dis[t] == std::numeric_limits<double>::max() ? -1 : dis[t]) << '\n';
 }
