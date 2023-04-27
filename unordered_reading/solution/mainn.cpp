@@ -14,6 +14,7 @@ int main()
 	std::cin >> n;
 	for (std::size_t i = 0; i < n; ++i)
 	{
+        int x;
 		std::cin >> x;
         ++arr[x+99];
 	}
