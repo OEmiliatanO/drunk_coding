@@ -10,7 +10,7 @@ int main()
 	std::ios_base::sync_with_stdio(false);
 	std::cin.tie(nullptr);
 
-	std::size_t n;
+	int n;
 	std::cin >> n;
 	for (int i = 0; i < n; ++i)
 	{
@@ -23,7 +23,7 @@ int main()
     while(arr[i] == 0) ++i;
     std::cout << i-99;
     --arr[i];
-	for (; i < 190; ++i)
+	for (; i < 200; ++i)
 	{
         while (arr[i]--)
         {
