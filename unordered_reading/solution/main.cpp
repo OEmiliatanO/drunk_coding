@@ -14,13 +14,13 @@ int main()
 	std::size_t n;
 	std::cin >> n;
 	arr.resize(n);
-	for (int i = 0; i < n; ++i)
+	for (std::size_t i = 0; i < n; ++i)
 	{
 		std::cin >> arr[i];
 	}
 
 	std::sort(arr.begin(), arr.end());
-	for (int i = 0; i < n; ++i)
+	for (std::size_t i = 0; i < n; ++i)
 	{
 		std::cout << arr[i] << " \n"[i==n-1];
 	}
