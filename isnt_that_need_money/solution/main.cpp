@@ -30,8 +30,18 @@ int main()
 		long long argmax = -(a0*db+b0*da)/(2*da*db);
 		//std::cout << f(argmax) << ' ' << argmax << '\n';
 		if (f(argmax) > f(argmax+1))
-			printf("%.0f %lld\n", f(argmax), argmax);
+		{
+			if (f(argmax-1) > f(argmax))
+				printf("%.0f %lld\n", f(argmax-1), argmax-1);
+			else
+				printf("%.0f %lld\n", f(argmax), argmax);
+		}
 		else
-			printf("%.0f %lld\n", f(argmax+1), argmax+1);
+		{
+			if (f(argmax-1) > f(argmax+1))
+				printf("%.0f %lld\n", f(argmax-1), argmax-1);
+			else
+				printf("%.0f %lld\n", f(argmax+1), argmax+1);
+		}
 	}
 }
