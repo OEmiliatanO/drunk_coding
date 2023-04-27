@@ -18,12 +18,16 @@ int main()
 		std::cin >> x;
         ++arr[x+99];
 	}
-
-	for (int i = 0; i < 190; ++i)
+    
+    int i = 0;
+    while(arr[i] == 0) ++i;
+    std::cout << i-99;
+    --arr[i];
+	for (; i < 190; ++i)
 	{
         while (arr[i]--)
         {
-            std::cout << i-99 << ' ';
+            std::cout << ' ' << i-99;
         }
 	}
     std::cout << '\n';
