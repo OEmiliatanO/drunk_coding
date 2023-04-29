@@ -2,3 +2,5 @@
 *.log
 *.test
 *.aux
+*.in
+*.ans
