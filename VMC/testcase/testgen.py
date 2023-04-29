@@ -9,6 +9,6 @@ print(t)
 for _ in range(t):
     n = random.randint(1, maxn)
     print(n, end = " ")
-    for __ in range(n):
-        print(random.randint(-range_, range_), end = " ")
-    print()
+    arr = [random.randint(-range_, range_) for __ in range(n)]
+    arr.sort()
+    print(*arr, sep = ' ')
