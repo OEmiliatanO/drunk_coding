@@ -1,0 +1,10 @@
+cat ../testcase/1.test | ./main.elf > 1.ans
+cat ../testcase/2.test | ./main.elf > 2.ans
+cat ../testcase/3.test | ./main.elf > 3.ans
+cat ../testcase/4.test | ./main.elf > 4.ans
+cat ../testcase/5.test | ./main.elf > 5.ans
+cat ../testcase/6.test | ./main.elf > 6.ans
+cat ../testcase/7.test | ./main.elf > 7.ans
+cat ../testcase/8.test | ./main.elf > 8.ans
+cat ../testcase/9.test | ./main.elf > 9.ans
+cat ../testcase/10.test | ./main.elf > 10.ans
