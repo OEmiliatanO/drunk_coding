@@ -15,19 +15,17 @@ int main()
         std::size_t n;
         std::cin >> n;
         arr.resize(n);
-        long long s = 0;
         for (std::size_t i = 0; i < n; ++i)
         {
 			scanf("%lld", &arr[i]);
-            s += arr[i];
         }
-        double mid = (double)s/n;
-        double ans = 0;
+        long long mid = arr[(n & 1 ? n/2 : n/2-1)];
+        long long ans = 0;
         for (std::size_t i = 0; i < n; ++i)
         {
             ans += std::abs(arr[i]-mid);
         }
         //std::cout << mid << " " << ans << '\n';
-		printf("%.5f %.5f\n", mid, ans);
+		printf("%lld %lld\n", mid, ans);
     }
 }
