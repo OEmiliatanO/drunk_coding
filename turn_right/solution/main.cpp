@@ -4,6 +4,7 @@
 #include <cstring>
 #include <queue>
 #include <limits>
+#include <array>
 
 constexpr int MAXN = 100000;
 using edge_t = std::pair<double, std::size_t>;
@@ -46,7 +47,7 @@ int main()
     std::fill(dis.begin(), dis.begin() + n + 1, std::numeric_limits<double>::max());
     dis[s] = 0;
     std::priority_queue<edge_t, std::vector<edge_t>, std::greater<edge_t>> pq;
-    pq.push(edge_t{0, s});
+    pq.emplace(0.0, s);
 
     while (pq.size())
     {
