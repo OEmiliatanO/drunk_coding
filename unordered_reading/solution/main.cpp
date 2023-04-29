@@ -1,6 +1,7 @@
 #include <iostream>
 #include <algorithm>
 #include <vector>
+#pragma GCC optimize("Ofast")
 
 constexpr int MAXN = 100000000;
 
